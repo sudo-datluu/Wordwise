@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordwiseLibrary", "WordwiseLibrary\WordwiseLibrary.csproj", "{79A66CBC-1773-4525-B075-808137B010A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordwiseUI", "WordwiseUI\WordwiseUI.csproj", "{228D89F6-6638-44FE-861F-99921E0D49B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4966D2DA-C500-4707-AABD-5C342C9E943C}"
+	ProjectSection(SolutionItems) = preProject
+		App.config = App.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79A66CBC-1773-4525-B075-808137B010A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A66CBC-1773-4525-B075-808137B010A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A66CBC-1773-4525-B075-808137B010A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A66CBC-1773-4525-B075-808137B010A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228D89F6-6638-44FE-861F-99921E0D49B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228D89F6-6638-44FE-861F-99921E0D49B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228D89F6-6638-44FE-861F-99921E0D49B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228D89F6-6638-44FE-861F-99921E0D49B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEBA3191-8F4F-4D16-B92D-317C1C6E4474}
+	EndGlobalSection
+EndGlobal
