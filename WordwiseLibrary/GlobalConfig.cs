@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
+using Microsoft.EntityFrameworkCore;
+using WordwiseLibrary.Models;
 
-//asfhsauihf
 namespace WordwiseLibrary
 {
     public static class GlobalConfig
@@ -13,7 +14,7 @@ namespace WordwiseLibrary
         public static string DBConnString()
         {
             //return ConfigurationManager.
-            return "IWILLGIVEYOUPASSWORD";
+            return "postgres://sudo-datluu:G6sgrDIyiY1P@ep-plain-pond-580166.ap-southeast-1.aws.neon.tech/wordwise";
         }
     }
 }
