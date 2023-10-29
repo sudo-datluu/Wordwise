@@ -9,6 +9,24 @@ namespace WordwiseLibrary.Data.Controller
 {
     public static class UserController
     {
+        //Singleton pattern
+    //    private static UserController instance = null;
+    //    private static readonly object instanceLock = new object();
+    //    private UserController() { }
+    //    public static UserController Instance
+    //    {
+    //        get
+    //        {
+    //            lock (instanceLock)
+    //            {
+    //                if (instance == null)
+    //{
+    //                    instance = new UserController();
+    //                }
+    //                return instance;
+    //            }
+    //        }
+    //    }
 
         // Create new user account
         // Return none if username existed in the database
@@ -16,7 +34,7 @@ namespace WordwiseLibrary.Data.Controller
         {
             using (var context = new Context())
             {
-                if (!context.Users.Any(u => u.Username == username)) return null;
+                if (context.Users.Any(u => u.Username == username)) return null;
 
                 var user = new User() { Username = username, Password = password };
                 context.Users.Add(user);
