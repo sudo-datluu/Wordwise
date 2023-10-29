@@ -37,15 +37,15 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
-            button2 = new Button();
-            button1 = new Button();
+            btnLogin = new Button();
             panel4 = new Panel();
-            textBox2 = new TextBox();
+            txtPassword = new TextBox();
             pictureBox3 = new PictureBox();
             panel2 = new Panel();
-            textBox1 = new TextBox();
+            txtUsername = new TextBox();
             pictureBox2 = new PictureBox();
             label6 = new Label();
+            btnChangeView = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -138,8 +138,8 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(button2);
-            panel3.Controls.Add(button1);
+            panel3.Controls.Add(btnChangeView);
+            panel3.Controls.Add(btnLogin);
             panel3.Controls.Add(panel4);
             panel3.Controls.Add(panel2);
             panel3.Controls.Add(label6);
@@ -150,56 +150,42 @@
             panel3.Size = new Size(450, 530);
             panel3.TabIndex = 2;
             // 
-            // button2
+            // btnLogin
             // 
-            button2.BackColor = SystemColors.Control;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = Color.FromArgb(41, 128, 185);
-            button2.Location = new Point(239, 331);
-            button2.Name = "button2";
-            button2.Size = new Size(187, 35);
-            button2.TabIndex = 3;
-            button2.Text = "Forget Password?";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(41, 128, 185);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(56, 331);
-            button1.Name = "button1";
-            button1.Size = new Size(148, 35);
-            button1.TabIndex = 3;
-            button1.Text = "LOGIN";
-            button1.UseVisualStyleBackColor = false;
+            btnLogin.BackColor = Color.FromArgb(41, 128, 185);
+            btnLogin.FlatStyle = FlatStyle.Flat;
+            btnLogin.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(56, 318);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(148, 35);
+            btnLogin.TabIndex = 3;
+            btnLogin.Text = "LOGIN";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // panel4
             // 
             panel4.BackColor = SystemColors.Control;
-            panel4.Controls.Add(textBox2);
+            panel4.Controls.Add(txtPassword);
             panel4.Controls.Add(pictureBox3);
             panel4.Location = new Point(0, 248);
             panel4.Name = "panel4";
             panel4.Size = new Size(450, 45);
             panel4.TabIndex = 2;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.BackColor = SystemColors.Control;
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.FromArgb(41, 128, 185);
-            textBox2.Location = new Point(56, 12);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(370, 21);
-            textBox2.TabIndex = 1;
-            textBox2.TabStop = false;
-            textBox2.UseSystemPasswordChar = true;
-            textBox2.Click += textBox2_Click;
+            txtPassword.BackColor = SystemColors.Control;
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Century Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPassword.ForeColor = Color.FromArgb(41, 128, 185);
+            txtPassword.Location = new Point(56, 12);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(370, 21);
+            txtPassword.TabIndex = 1;
+            txtPassword.TabStop = false;
+            txtPassword.UseSystemPasswordChar = true;
             // 
             // pictureBox3
             // 
@@ -216,24 +202,23 @@
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtUsername);
             panel2.Controls.Add(pictureBox2);
             panel2.Location = new Point(0, 181);
             panel2.Name = "panel2";
             panel2.Size = new Size(450, 45);
             panel2.TabIndex = 2;
             // 
-            // textBox1
+            // txtUsername
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(41, 128, 185);
-            textBox1.Location = new Point(56, 12);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(370, 25);
-            textBox1.TabIndex = 1;
-            textBox1.TabStop = false;
-            textBox1.Click += textBox1_Click;
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtUsername.ForeColor = Color.FromArgb(41, 128, 185);
+            txtUsername.Location = new Point(56, 12);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(370, 25);
+            txtUsername.TabIndex = 1;
+            txtUsername.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -255,6 +240,20 @@
             label6.Size = new Size(206, 21);
             label6.TabIndex = 1;
             label6.Text = "Login to your account";
+            // 
+            // btnChangeView
+            // 
+            btnChangeView.BackColor = SystemColors.Control;
+            btnChangeView.FlatAppearance.BorderSize = 0;
+            btnChangeView.FlatStyle = FlatStyle.Flat;
+            btnChangeView.Font = new Font("Century Gothic", 7.8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnChangeView.ForeColor = Color.FromArgb(41, 128, 185);
+            btnChangeView.Location = new Point(239, 318);
+            btnChangeView.Name = "btnChangeView";
+            btnChangeView.Size = new Size(187, 35);
+            btnChangeView.TabIndex = 4;
+            btnChangeView.Text = "Register new account";
+            btnChangeView.UseVisualStyleBackColor = false;
             // 
             // AuthViewerForm
             // 
@@ -296,9 +295,9 @@
         private Panel panel4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Button button1;
-        private Button button2;
+        private TextBox txtPassword;
+        private TextBox txtUsername;
+        private Button btnLogin;
+        private Button btnChangeView;
     }
 }
