@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-//asfhsauihf
 namespace WordwiseLibrary
 {
     public static class GlobalConfig
@@ -15,6 +14,5 @@ namespace WordwiseLibrary
             //return ConfigurationManager.
             return "IWILLGIVEYOUPASSWORD";
         }
-        //ccccccc
     }
 }
