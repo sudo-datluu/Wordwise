@@ -20,7 +20,7 @@ namespace WordwiseLibrary.Data.Controller
                 lock (instanceLock)
                 {
                     if (instance == null)
-                    {
+    {
                         instance = new UserController();
                     }
                     return instance;
