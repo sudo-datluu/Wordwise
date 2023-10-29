@@ -12,7 +12,7 @@ namespace WordwiseLibrary
         public static string DBConnString()
         {
             //return ConfigurationManager.
-            return "IWILLGIVEYOUPASSWORD";
+            return "User ID=sudo-datluu;Password=G6sgrDIyiY1P;Host=ep-plain-pond-580166.ap-southeast-1.aws.neon.tech;Port=5432;Database=wordwise;";
         }
     }
 }
