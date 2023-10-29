@@ -8,7 +8,13 @@ namespace WordwiseLibrary.Models
 {
     public class User
     {
-        public string Name { get; set; }
+        // Unique identifier for user
+        public int UserID { get; set; }
+
+        // Credential for account name
+        public string Username { get; set; }
+
+        // Credential for account password
         public string Password { get; set; }
     }
 }
